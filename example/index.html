@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>example</title>
+    <style>
+        #test{
+            width: 14rem;
+            height: 14rem;
+            margin: 20px auto;
+            border: 2px solid cadetblue;
+        }
+        #test2{
+            width: 12rem;
+            height: 12rem;
+            margin: 20px auto;
+            border: 2px solid cadetblue;
+        }
+        #test3{
+            width: 12rem;
+            height: 23rem;
+            margin: 20px auto;
+            border: 2px solid cadetblue;
+        }
+    </style>
+</head>
+<body>
+<div id="test"></div>
+<div id="test2"></div>
+<div id="test3"></div>
+
+    <script src="dist/example.js"></script>
+    <script>
+        new SpriteAnimation('#test',{
+            // image: './images/deco.png', // url or Array
+            image:[
+                './images/sprites/001.png',
+                './images/sprites/002.png',
+                './images/sprites/003.png',
+                './images/sprites/004.png',
+                './images/sprites/005.png',
+                './images/sprites/006.png',
+                './images/sprites/007.png',
+                './images/sprites/008.png',
+                './images/sprites/009.png',
+                './images/sprites/010.png',
+                './images/sprites/011.png',
+                './images/sprites/012.png',
+                './images/sprites/013.png',
+                './images/sprites/014.png',
+                './images/sprites/015.png',
+                './images/sprites/016.png',
+                './images/sprites/017.png',
+                './images/sprites/018.png',
+                './images/sprites/019.png',
+                './images/sprites/020.png',
+                './images/sprites/021.png',
+                './images/sprites/022.png',
+                './images/sprites/023.png',
+                './images/sprites/024.png',
+                './images/sprites/025.png',
+                './images/sprites/026.png',
+                './images/sprites/027.png',
+            ],
+            duration: '2s',
+            loop: true,
+            imageProcess(val){
+                // console.log(val)
+            },
+            imageLoaded(){
+                console.log('loaded')
+            },
+            animationCompleted(){},
+            animationFrame(){},
+        })
+
+
+        new SpriteAnimation('#test2',{
+            image: './images/deco.png', // url or Array
+            // image:[
+            //     './images/sprites/001.png',
+            // ],
+            width: 480,
+            height: 480,
+            frames: 20,
+            padding: 0,
+            duration: '4s',
+            loop: true,
+            imageProcess(val){
+                console.log(val)
+            },
+            imageLoaded(){
+                console.log('loaded')
+            },
+            animationCompleted(){},
+            animationFrame(){},
+        })
+
+        new SpriteAnimation('#test3',{
+            image: './images/spritesheet.png', // url or Array
+            // image:[
+            //     './images/sprites/001.png',
+            // ],
+            width: 165,
+            height: 292,
+            frames: 60,
+            padding: 0,
+            duration: '5s',
+            loop: true,
+            imageProcess(val){
+                console.log(val)
+            },
+            imageLoaded(){
+                console.log('loaded')
+            },
+            animationCompleted(){},
+            animationFrame(){},
+        })
+    </script>
+</body>
+</html>
