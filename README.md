@@ -63,7 +63,27 @@
 SpriteAnimation
 
 
-、
+new SpriteAnimation('#test2',{
+    // image: './images/deco.png', // url or Array
+    image:'./images/deco.png
+    width: 480,
+    height: 480,
+    frames: 20,
+    padding: 0,
+    duration: '5s',
+    loop: true,
+    imageProcess(val){
+        // console.log(val)
+    },
+    imageLoaded(){
+        console.log('loaded')
+    },
+    animationCompleted(){},
+    animationFrame(){},
+})
+
+or
+
 new SpriteAnimation('#test',{
     // image: './images/deco.png', // url or Array
     image:[
@@ -110,30 +130,6 @@ new SpriteAnimation('#test',{
     animationCompleted(){},
     animationFrame(){},
 })
-
-
-or
-
-
-new SpriteAnimation('#test2',{
-    // image: './images/deco.png', // url or Array
-    image:'./images/deco.png
-    width: 480,
-    height: 480,
-    frames: 20,
-    padding: 0,
-    duration: '5s',
-    loop: true,
-    imageProcess(val){
-        // console.log(val)
-    },
-    imageLoaded(){
-        console.log('loaded')
-    },
-    animationCompleted(){},
-    animationFrame(){},
-})
-
 ```
 
 
