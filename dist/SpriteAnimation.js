@@ -74,7 +74,7 @@ SpriteAnimation.prototype = {
             height: 0,
             padding: 0,
             frames: 0,
-            duration: 0,
+            duration: '2s',
             loop: true,
             imageProcess: function imageProcess() {},
             imageLoaded: function imageLoaded() {},
@@ -103,6 +103,7 @@ SpriteAnimation.prototype = {
         this.sourceImage.onload = function () {
             _this.sourceImageW = _this.sourceImage.naturalWidth;
             _this.sourceImageH = _this.sourceImage.naturalHeight;
+            _this.configOptions.imageLoaded && _this.configOptions.imageLoaded();
             _this.getRowCol();
         };
         this.sourceImage.src = url;

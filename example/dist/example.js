@@ -103,6 +103,7 @@ SpriteAnimation.prototype = {
         this.sourceImage.onload = function () {
             _this.sourceImageW = _this.sourceImage.naturalWidth;
             _this.sourceImageH = _this.sourceImage.naturalHeight;
+            _this.configOptions.imageLoaded && _this.configOptions.imageLoaded();
             _this.getRowCol();
         };
         this.sourceImage.src = url;

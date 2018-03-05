@@ -1,6 +1,6 @@
 {
   "name": "@meitu/SpriteAnimation",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "meitu library template.",
   "main": "dist/SpriteAnimation.js",
   "module": "dist/SpriteAnimation.es.js",
