@@ -9,17 +9,9 @@
 [example](http://f2er.meitu.com/hmz/SpriteAnimation/example)
 
 ## Getting Started
- 
- ```shell
- npm set registry http://npm.meitu-int.com 
- ```
- 
- ```shell
- npm i @meitu/SpriteAnimation --save
- ```
 
  ```shell
- import ClipImage from '@meitu/SpriteAnimation';
+ import SpriteAnimation from '@meitu/SpriteAnimation';
  ```
  
  
